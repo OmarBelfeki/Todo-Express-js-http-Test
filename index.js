@@ -7,6 +7,10 @@ app.use(express.json());
 let todos = []
 let idCounter = 1;
 
+app.get("/", (req, res) => {
+    res.send("hi to start go to /todos or todo-api-test on repository, omar Belfeki")
+})
+
 app.get("/todos", (req, res) => {
     const {status} = req.query;
     let results = todos;
