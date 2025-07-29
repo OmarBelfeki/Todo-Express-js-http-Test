@@ -1,0 +1,37 @@
+
+### GET todos
+GET http://localhost:3000/todos
+
+
+### POST todos
+POST http://localhost:3000/todos
+content-Type: application/json
+
+{
+    "title": "Buy ipohne"
+}
+
+
+### PUT todos
+PUT http://localhost:3000/todos/1
+content-Type: application/json
+
+{
+    "title": "byu iphone"
+}
+
+###
+
+PUT http://localhost:3000/todos/1
+content-Type: application/json
+
+{
+    "title": "byu iphone",
+    "status": "completed"
+}
+
+### filter tasks by status
+GET http://localhost:3000/todos?status=completed
+
+### delete task
+DELETE http://localhost:3000/todos/2
